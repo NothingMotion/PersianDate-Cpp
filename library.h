@@ -1,6 +1,0 @@
-#ifndef PERSIANDATE_CPP_LIBRARY_H
-#define PERSIANDATE_CPP_LIBRARY_H
-
-void hello();
-
-#endif // PERSIANDATE_CPP_LIBRARY_H
