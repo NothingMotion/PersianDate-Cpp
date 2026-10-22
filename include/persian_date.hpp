@@ -63,6 +63,18 @@ namespace notmot {
             time_t toTime_t();
         };
 
+        template <typename T>
+        T div(T a, T b);
+
+        template <typename T>
+        T mod(T a, T b);
+
+        template <typename T>
+        T add(T a, T b);
+
+        template <typename T>
+        T sub(T a, T b);
+
         class PersianDate {
         public:
             static bool isLeapYearJalali(std::uint16_t year);
@@ -92,6 +104,7 @@ namespace notmot {
 
         private:
             static bool replace(std::string &str, const std::string &from, const std::string &to);
+            static std::int32_t gregorianToJulianDay(std::uint16_t year, std::uint16_t month, std::uint16_t day);
         };
     }
 } // notmot
