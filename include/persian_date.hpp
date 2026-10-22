@@ -68,18 +68,18 @@ namespace notmot {
             static bool isLeapYearJalali(std::uint16_t year);
 
             /**
-         * In Gregorian calendar the leap year has 29 days in february
-         * @param year year
-         * @return true if the year is leap year
-         */
+            * In Gregorian calendar the leap year has 29 days in february
+            * @param year year
+            * @return true if the year is leap year
+            */
             static bool IsLeapYearGregorian(std::uint16_t year);
 
             /**
-         * Returns length of the jalali month
-         * @param year the year for calculating leap year
-         * @param month the month starting from 1 (Farvardin) to 12 (Esfand)
-         * @return length of the month
-         */
+            * Returns length of the jalali month
+            * @param year the year for calculating leap year
+            * @param month the month starting from 1 (Farvardin) to 12 (Esfand)
+            * @return length of the month
+            */
             static std::uint16_t getJalaliMonthLength(std::uint16_t year, std::uint16_t month);
 
             static std::uint16_t getGregorianMonthLength(std::uint16_t year, std::uint16_t month);

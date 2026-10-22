@@ -101,12 +101,12 @@ namespace notmot {
 
         std::uint16_t PersianDate::getGregorianMonthLength(std::uint16_t year, std::uint16_t month) {
             /*
-        31-day months: January, March, May, July, August, October, December
+            31-day months: January, March, May, July, August, October, December
 
-        30-day months: April, June, September, November
+            30-day months: April, June, September, November
 
-        February: 28 days (29 in leap years)
-        */
+            February: 28 days (29 in leap years)
+            */
             std::uint16_t months[] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
             if (IsLeapYearGregorian(year)) {
                 months[1] = 29;
